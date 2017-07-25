@@ -1,3 +1,6 @@
+
+注意：普通函数只有在声明式中如果有"use strict"，这里的this指向underfine
+
 var fn=()=>alert(1);//相当于return alert（1），且当不传参数时必须用（）
 fn()
 var f=()=>{执行的代码}
@@ -14,3 +17,4 @@ this的优先级：人为手动设置>new>定时器>事件>fn()
    		      只要fn()函数名加()前面没有主或者没有call改变this的方法，那么this就是window
    		      JS规范，直接new函数下的*内置*方法就报错，自定义的不会报错
    		       同样箭头函数也是不能new的，否则报错
+
